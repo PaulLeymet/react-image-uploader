@@ -13,8 +13,8 @@ const ImageUpload = ({onFile}: {onFile: (file: File) => void}) => {
 
   return (
     <Button variant="contained" component="label">
-      Upload File
-      <input type="file" hidden onChange={handleChange} />
+      Select an image
+      <input type="file" accept="image/*" hidden onChange={handleChange} />
     </Button>
   )
 }
