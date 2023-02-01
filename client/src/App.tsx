@@ -26,6 +26,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <div className="title">Image Uploader</div>
         <ImageUpload onFile={setFile} />
         <ValidateButton onValidate={validate} />
       </header>
