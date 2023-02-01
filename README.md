@@ -2,7 +2,7 @@
 
 ## 1. Start server
 
-cd server; yarn start
+cd server; yarn; yarn start
 
 ## 2. Start client
 
