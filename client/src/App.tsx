@@ -15,10 +15,13 @@ function App() {
           method: 'POST',
           body: formData,
         })
+
         alert('Image uploaded successfully')
       } catch (error) {
         alert('Image upload failed')
       }
+      // Empty file
+      setFile(undefined)
     }
   }
 
@@ -26,8 +29,12 @@ function App() {
     <div className="App">
       <header className="App-header">
         <div className="title">Image Uploader</div>
-        <ImageUpload onFile={setFile} />
-        <ValidateButton onValidate={validate} />
+        <div className="input">
+          <ImageUpload onFile={setFile} />
+        </div>
+        <div className="validation-button">
+          <ValidateButton disabled={!file} onValidate={validate} />
+        </div>
       </header>
     </div>
   )
