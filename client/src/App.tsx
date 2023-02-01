@@ -17,7 +17,6 @@ function App() {
         })
         alert('Image uploaded successfully')
       } catch (error) {
-        console.error(error)
         alert('Image upload failed')
       }
     }
